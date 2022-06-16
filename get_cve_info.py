@@ -27,7 +27,7 @@ while True:
 		cvedetails = getCVEDetails(cvename)
 		trimmedcve = cvedetails[0]
 		dumpcve = json.dumps(trimmedcve, indent=4, sort_keys=True)
-		print(dumpcve)
+		#print(dumpcve)
 		#Cleanup unicode strings 'u'
 		final_dictionary = json.loads(dumpcve.encode("ascii"))
 		#Extract required fields
@@ -41,7 +41,7 @@ while True:
 		attackerValue = score['attackerValue']
 		exploit = score['exploitability']
 		finalout = "Title :"+ v_title + "\nDocument: " + document + "\nProduct Name : "+ product_names + "\nVendor Names : "+ vendor_names+"\nAttacker Value : "+ str(attackerValue)+"\nExploitability : "+str(exploit)
-		#print(finalout)
+		print(finalout)
 		break
 
 
