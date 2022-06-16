@@ -6,7 +6,7 @@ json, re, attackerkb_api
 
 # Usage
 python3 get_cve_info.py
-enter a valid CVE to retrive information like
+\nenter a valid CVE to retrive information like
 * Title
 * Product Name
 * Vendors
